@@ -1,0 +1,67 @@
+/* yellow : #fdc00f */
+/* dark blue : #274964 */
+/* light blue : #0fafbd */
+/* #001628 :deep dark blue */
+/* black : #01090f */
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute!important;
+  top: 50%!important;
+  /* transform: translateY(-50%)!important;*/ /* important */
+ /*  */
+
+
+ border: solid black;
+ border-width: 0 3px 3px 0;
+ background: transparent!important;
+padding: 10px!important;
+  display: unset!important;
+border-radius: 0!important;
+}
+
+.owl-prev {
+  left: -2rem!important;
+  /*  */
+  
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+}
+
+.owl-next {
+  right: -2rem!important;
+
+  /*  */
+  /* border-width: 0 3px 3px 0; */
+  /* display: inline-block; */
+  /* padding: 3px; */
+  /* background: transparent!important; */
+/* padding: 10px!important; */
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  /* display: unset!important; */
+}
+@media only screen and (max-width:767px){
+ 
+  .owl-prev,
+  .owl-next {
+    display:none!important;
+  }
+  } 
+@media only screen and (min-width:1024px){
+  .owl-prev,
+  .owl-next {
+    display:none!important;
+  }
+ 
+}
+.form-control:focus{
+  border-color: #fdc00f!important;
+  /* box-shadow: 0 1px 1px #fdc10f94 inset, 0 0 8px #fdc10f94 !important; */
+  box-shadow: none!important;
+  outline: 0 none!important;
+}
